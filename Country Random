@@ -1,0 +1,22 @@
+CREATE TABLE countries (id INTEGER PRIMARY KEY, name TEXT, strength INTEGER, region TEXT, price INTEGER);
+
+INSERT INTO countries VALUES 
+(1, "england", 99, "east", 4);
+INSERT INTO countries VALUES  (2, "france", 75, "east", 5);
+INSERT INTO countries VALUES  (3, "usa", 67, "west", 6);
+INSERT INTO countries VALUES  (4, "germany", 75, "east", 7);
+INSERT INTO countries VALUES (5, "turkey", 75, "east", 7);
+INSERT INTO countries VALUES  (6, "costa rica", 2, "ieast", 1);
+INSERT INTO countries VALUES  (7, "spain", 44, "east", 4);
+INSERT INTO countries VALUES (8, "england", 75, "east", 7);
+INSERT INTO countries VALUES  (9, "russia", 77, "east", 2);
+INSERT INTO countries VALUES  (10, "ukraine", 7, "west", 1);
+INSERT INTO countries VALUES  (11, "japan", 75, "west", 7);
+INSERT INTO countries VALUES  (12, "korea", 75, "west", 11);
+INSERT INTO countries VALUES  (13, "china", 7, "west", 77);
+INSERT INTO countries VALUES  (14, "mongolia", 55, "west", 75);
+INSERT INTO countries VALUES  (15, "thailand", 75, "west", 7);
+
+SELECT * FROM countries ORDER BY price desc;
+
+SELECT SUM (price) FROM countries;
